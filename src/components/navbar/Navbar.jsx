@@ -1,0 +1,28 @@
+import React from 'react'
+import Cart from '../../assets/products/shopping-cart.png'
+const Navbar = () => {
+
+    const NavLink = ['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ']
+  return (
+    <div className=' border-b border-black/18 py-5'>
+        <div className='flex px-5 justify-between items-center max-w-[1180px] mx-auto'>
+      <h2 className='text-3xl font-black bg-linear-to-l to-[#4F39F6] from-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
+      <div className='md:flex gap-[28px] hidden'>
+        {
+            NavLink.map((list)=>{
+               return <a href="#" className='text-[#101727] font-semibold'>{list}</a>
+            })
+        }
+      </div>
+
+      <div className='flex items-center gap-3'>
+        <button className=' cursor-pointer'><img src={Cart} alt="" /></button>
+        <button className=' cursor-pointer'>Login</button>
+        <button className='bg-linear-to-l to-[#4F39F6] from-[#9514FA] px-5 py-2.5 text-white cursor-pointer rounded-full'>Get Started</button>
+      </div>
+    </div>
+    </div>
+  )
+}
+
+export default Navbar

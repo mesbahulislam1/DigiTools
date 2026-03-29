@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Pack",
+    "description": "Basic resume builder with essential templates for beginners.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "20+ templates",
+      "Basic ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume creation with premium templates and AI suggestions.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "AI content suggestions",
+      "ATS optimization",
+      "Export to PDF & Word"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Plan",
+    "description": "All-in-one package for job seekers with resume and cover letter tools.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume + Cover Letter builder",
+      "LinkedIn optimization",
+      "Unlimited downloads",
+      "Priority support"
+    ],
+    "icon": "💼"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create stunning personal portfolios with ease.",
+    "price": 14.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "50+ portfolio templates",
+      "Custom domain support",
+      "Responsive design",
+      "SEO optimization"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Kit",
+    "description": "Prepare for interviews with mock questions and AI feedback.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interview questions",
+      "AI feedback",
+      "Video practice",
+      "Performance analytics"
+    ],
+    "icon": "🎤"
+  },
+  {
+    "id": 6,
+    "name": "Ultimate Career Suite",
+    "description": "Complete career solution with all premium tools included.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "All premium features",
+      "Unlimited resumes",
+      "Career coaching",
+      "Priority support"
+    ],
+    "icon": "🏆"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Tools designed for freelancers to showcase skills and projects.",
+    "price": 24.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Portfolio builder",
+      "Invoice generator",
+      "Client management",
+      "Project tracking"
+    ],
+    "icon": "🧑‍💻"
+  },
+  {
+    "id": 8,
+    "name": "Student Pack",
+    "description": "Affordable tools for students entering the job market.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Student templates",
+      "Internship resume builder",
+      "Basic analytics",
+      "Export to PDF"
+    ],
+    "icon": "🎓"
+  }
+]

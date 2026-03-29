@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import View from './components/view/View'
@@ -10,14 +10,16 @@ const dataLoad = async()=> {
 }
 
 const App = () => {
+  const [card, setCard]=useState([]);
+  
   const dataCardLoad= dataLoad()
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar card={card}></Navbar>
       <Hero></Hero>
       <View></View>
       <Suspense fallback={<h1>Loding.....</h1>}>
-        <PremiumSection dataCardLoad={dataCardLoad}></PremiumSection>
+        <PremiumSection dataCardLoad={dataCardLoad} card={card} setCard={setCard}></PremiumSection>
       </Suspense>
     </div>
   )

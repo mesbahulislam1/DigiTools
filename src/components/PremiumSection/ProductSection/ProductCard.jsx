@@ -1,9 +1,11 @@
 import React from 'react'
 import TikImg from '../../../assets/tik.png'
+import { toast } from 'react-toastify'
 const ProductCard = ({list, setCard, card}) => {
     
     const dataHandeling =(event)=>{
         setCard([...card, event])
+        toast.success('Add to Cart')
     }
 
   return (

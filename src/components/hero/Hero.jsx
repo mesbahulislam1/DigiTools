@@ -5,7 +5,7 @@ import HeroImage from '../../assets/banner.png'
 
 const Hero = () => {
   return (
-    <div className='flex justify-between items-center mt-[60px] gap-5 px-5 flex-col md:flex-row max-w-[1180px]  mx-auto'>
+    <div className='flex justify-between pt-17 items-center mt-[60px] gap-5 px-5 flex-col md:flex-row max-w-[1180px]  mx-auto'>
       <div className='flex-1'>
         <h3 className='flex items-center gap-2 bg-[#E1E7FF] px-3 py-1 w-fit rounded-full'><img src={Dot} alt="" />
         <span className='bg-linear-to-l to-[#4F39F6] from-[#9514FA] bg-clip-text text-transparent font-medium'>New: AI-Powered Tools Available</span></h3>

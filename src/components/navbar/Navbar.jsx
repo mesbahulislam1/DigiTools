@@ -4,7 +4,7 @@ const Navbar = ({card}) => {
 
     const NavLink = ['Products', 'Features', 'Pricing', 'Testimonials', 'FAQ']
   return (
-    <div className=' border-b border-black/18 py-5'>
+    <div className=' border-b fixed top-0 w-full z-50 bg-white border-black/18 py-5'>
         <div className='flex px-5 justify-between items-center max-w-[1180px] mx-auto'>
       <h2 className='text-3xl font-black bg-linear-to-l to-[#4F39F6] from-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
       <div className='md:flex gap-[28px] hidden'>

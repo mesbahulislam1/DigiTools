@@ -7,6 +7,8 @@ import AccountStart from './components/accountStart/AccountStart'
 import Subscription from './components/subscription/Subscription'
 import ExploreSection from './components/exploreSection/ExploreSection'
 import Footer from './components/footer/Footer'
+ import { ToastContainer} from 'react-toastify';
+
 
 const dataLoad = async()=> {
   const res =await fetch('/data.json');
@@ -29,6 +31,9 @@ const App = () => {
       <Subscription></Subscription>
       <ExploreSection></ExploreSection>
       <Footer></Footer>
+
+
+      <ToastContainer />
     </div>
   )
 }

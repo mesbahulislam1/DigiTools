@@ -5,6 +5,8 @@ import View from './components/view/View'
 import PremiumSection from './components/PremiumSection/PremiumSection'
 import AccountStart from './components/accountStart/AccountStart'
 import Subscription from './components/subscription/Subscription'
+import ExploreSection from './components/exploreSection/ExploreSection'
+import Footer from './components/footer/Footer'
 
 const dataLoad = async()=> {
   const res =await fetch('/data.json');
@@ -25,6 +27,8 @@ const App = () => {
       </Suspense>
       <AccountStart></AccountStart>
       <Subscription></Subscription>
+      <ExploreSection></ExploreSection>
+      <Footer></Footer>
     </div>
   )
 }

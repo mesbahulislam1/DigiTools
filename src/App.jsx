@@ -3,6 +3,8 @@ import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import View from './components/view/View'
 import PremiumSection from './components/PremiumSection/PremiumSection'
+import AccountStart from './components/accountStart/AccountStart'
+import Subscription from './components/subscription/Subscription'
 
 const dataLoad = async()=> {
   const res =await fetch('/data.json');
@@ -21,6 +23,8 @@ const App = () => {
       <Suspense fallback={<h1>Loding.....</h1>}>
         <PremiumSection dataCardLoad={dataCardLoad} card={card} setCard={setCard}></PremiumSection>
       </Suspense>
+      <AccountStart></AccountStart>
+      <Subscription></Subscription>
     </div>
   )
 }

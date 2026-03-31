@@ -4,8 +4,15 @@ import { toast } from 'react-toastify'
 const ProductCard = ({list, setCard, card}) => {
     
     const dataHandeling =(event)=>{
-        setCard([...card, event])
+
+        const exits = card.find(item=> item.id === event.id);
+        if (!exits) {
+            setCard([...card, event])
         toast.success('Add to Cart')
+        }else{
+            toast.error('Already added');
+        }
+        
     }
 
   return (
@@ -22,11 +29,11 @@ const ProductCard = ({list, setCard, card}) => {
             {
                 list.features.map((list, index)=>{
                     return <h2 key={index} className='flex items-center text-[#627382] gap-2
-                    '><img src={TikImg} alt="" />{list}sd</h2>
+                    '><img src={TikImg} alt="" />{list}</h2>
                 })
             }
         </div>
-        <button onClick={()=> dataHandeling(list)} className='bg-linear-to-l to-[#4F39F6] from-[#9514FA] cursor-pointer px-4.5 py-3 rounded-full text-white font-medium w-full'>Buy Now</button>
+        <button type='button' onClick={()=> dataHandeling(list)} className='bg-linear-to-l to-[#4F39F6] from-[#9514FA] cursor-pointer px-4.5 py-3 rounded-full text-white font-medium w-full'>Buy Now</button>
     </div>
   )
 }

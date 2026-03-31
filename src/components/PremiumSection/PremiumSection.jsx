@@ -1,9 +1,16 @@
-import React, { use, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Product from './ProductSection/Product'
 import Cart from './ProductSection/Cart'
 
-const PremiumSection = ({dataCardLoad, setCard,card}) => {
-    const cardData = use(dataCardLoad)
+const PremiumSection = ({ setCard,card}) => {
+    
+    const [cardData, setCardData] = useState([]);
+
+useEffect(() => {
+  fetch('/data.json')
+    .then(res => res.json())
+    .then(data => setCardData(data));
+}, []);
     
     const [showCard, setShowCard]=useState('products')
 

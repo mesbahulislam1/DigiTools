@@ -10,23 +10,16 @@ import Footer from './components/footer/Footer'
  import { ToastContainer} from 'react-toastify';
 
 
-const dataLoad = async()=> {
-  const res =await fetch('/data.json');
-  return res.json();
-}
 
 const App = () => {
   const [card, setCard]=useState([]);
   
-  const dataCardLoad= dataLoad()
   return (
     <div>
       <Navbar card={card}></Navbar>
       <Hero></Hero>
       <View></View>
-      <Suspense fallback={<h1>Loding.....</h1>}>
-        <PremiumSection dataCardLoad={dataCardLoad} card={card} setCard={setCard}></PremiumSection>
-      </Suspense>
+      <PremiumSection card={card} setCard={setCard}></PremiumSection>
       <AccountStart></AccountStart>
       <Subscription></Subscription>
       <ExploreSection></ExploreSection>

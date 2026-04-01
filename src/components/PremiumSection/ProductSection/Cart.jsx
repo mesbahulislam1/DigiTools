@@ -15,7 +15,7 @@ const Cart = ({ card, setCard }) => {
     toast.success('Your cart successfull')
   }
   return (
-    <div className="p-7 border border-black/18 rounded-2xl">
+    <div  id="cart-section" className="p-7 border border-black/18 rounded-2xl">
       <h2 className="text-2xl font-extrabold text-[#101727]">Your Cart</h2>
 
       {

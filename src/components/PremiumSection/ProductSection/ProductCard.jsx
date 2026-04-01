@@ -1,18 +1,22 @@
 import React from 'react'
 import TikImg from '../../../assets/tik.png'
 import { toast } from 'react-toastify'
-const ProductCard = ({list, setCard, card}) => {
-    
-    const dataHandeling =(event)=>{
+import { FaCheck } from "react-icons/fa6";
 
-        const exits = card.find(item=> item.id === event.id);
-        if (!exits) {
+
+
+const ProductCard = ({list, setCard, card}) => {
+
+    const isAdded = card.find(lists=> lists.id == list.id)
+    const dataHandeling =(event)=>{
+        
+        
+        if (!isAdded) {
             setCard([...card, event])
         toast.success('Add to Cart')
         }else{
-            toast.error('Already added');
+            toast.error('Already added')
         }
-        
     }
 
   return (
@@ -33,7 +37,7 @@ const ProductCard = ({list, setCard, card}) => {
                 })
             }
         </div>
-        <button type='button' onClick={()=> dataHandeling(list)} className='bg-linear-to-l to-[#4F39F6] from-[#9514FA] cursor-pointer px-4.5 py-3 rounded-full text-white font-medium w-full'>Buy Now</button>
+        <button type='button' onClick={()=> dataHandeling(list)} className={` ${isAdded ? 'bg-[#14abd1]':'bg-linear-to-l to-[#4F39F6] from-[#9514FA]'} cursor-pointer px-4.5 py-3 rounded-full text-white font-medium w-full`}>{isAdded ? <span className='flex items-center gap-2 justify-center'><FaCheck />Added To Cart</span> : 'Add to Cart'}</button>
     </div>
   )
 }

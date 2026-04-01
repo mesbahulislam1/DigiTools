@@ -5,11 +5,18 @@ import { IoCloseSharp } from "react-icons/io5";
 
 
 
+
 const Navbar = ({card}) => {
 
   const [showMenu, setShowMenu]=useState(false)
 
-
+   const dataLoad=()=>{
+    const section = document.getElementById("cart-section");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+     
+   }
 
   useEffect(() => {
     const resizeHandel=()=>{

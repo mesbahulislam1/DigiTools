@@ -4,7 +4,7 @@ import Cart from './ProductSection/Cart'
 
 const PremiumSection = ({ setCard,card}) => {
     
-    const [cardData, setCardData] = useState([]);
+const [cardData, setCardData] = useState([]);
 
 useEffect(() => {
   fetch('/data.json')
